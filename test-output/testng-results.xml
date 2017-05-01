@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48717" started-at="2015-02-19T09:33:48Z" finished-at="2015-02-19T09:34:36Z">
+  <suite name="Default suite" duration-ms="44448" started-at="2017-05-01T05:51:56Z" finished-at="2017-05-01T05:52:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48717" started-at="2015-02-19T09:33:48Z" finished-at="2015-02-19T09:34:36Z">
-      <class name="lesson2.TestMeiTuan_1">
-        <test-method status="PASS" signature="AndroidSettings()[pri:0, instance:lesson2.TestMeiTuan_1@44175c06]" name="AndroidSettings" is-config="true" duration-ms="4180" started-at="2015-02-19T17:33:43Z" finished-at="2015-02-19T17:33:48Z">
+    <test name="Default test" duration-ms="44448" started-at="2017-05-01T05:51:56Z" finished-at="2017-05-01T05:52:41Z">
+      <class name="lesson1.AndroidFirstTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:lesson1.AndroidFirstTest@60c6f5b]" name="beforeClass" is-config="true" duration-ms="8" started-at="2017-05-01T13:51:56Z" finished-at="2017-05-01T13:51:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AndroidSettings -->
-        <test-method status="PASS" signature="initalTestCaseSettings()[pri:0, instance:lesson2.TestMeiTuan_1@44175c06]" name="initalTestCaseSettings" is-config="true" duration-ms="0" started-at="2015-02-19T17:33:48Z" finished-at="2015-02-19T17:33:48Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:lesson1.AndroidFirstTest@60c6f5b]" name="f" duration-ms="44423" started-at="2017-05-01T13:51:56Z" finished-at="2017-05-01T13:52:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initalTestCaseSettings -->
-        <test-method status="PASS" signature="testDataDriver()[pri:0, instance:lesson2.TestMeiTuan_1@44175c06]" name="testDataDriver" duration-ms="47421" started-at="2015-02-19T17:33:48Z" description="loginwithdatadriver" finished-at="2015-02-19T17:34:35Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:lesson1.AndroidFirstTest@60c6f5b]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-05-01T13:52:41Z" finished-at="2017-05-01T13:52:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDataDriver -->
-        <test-method status="PASS" signature="realse()[pri:0, instance:lesson2.TestMeiTuan_1@44175c06]" name="realse" is-config="true" duration-ms="1282" started-at="2015-02-19T17:34:35Z" finished-at="2015-02-19T17:34:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- realse -->
-      </class> <!-- lesson2.TestMeiTuan_1 -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- lesson1.AndroidFirstTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
