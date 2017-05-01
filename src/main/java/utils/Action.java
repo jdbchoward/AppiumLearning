@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 
 import org.openqa.selenium.By;
@@ -16,13 +17,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Action {
 
 
-	public AppiumDriver driver;
+	public AndroidDriver  driver;
 	public TouchAction au;
 	public Actions ac;
 	private int timeout =20;
 	
 	public Action(AppiumDriver driver){	
-		this.driver = driver;	
+		this.driver = (AndroidDriver)driver;	
 		au = new TouchAction(driver);
 		ac = new Actions(driver);
 	}
@@ -46,7 +47,7 @@ public class Action {
 	 * 
 	 * @param startElement
 	 * @param endElement
-	 * @param Up ÊÇ·ñÏòÉÏ»¬¶¯
+	 * @param Up ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ï»ï¿½ï¿½ï¿½
 	 * 
 	 */
 	public void swipe(By startElement,By endElement,boolean Up){
@@ -84,9 +85,9 @@ public class Action {
 	public void setValue(By by,String value){
 		this.click(by);
 		int size = driver.findElement(by).getText().length();
-		driver.sendKeyEvent(123);//¹â±ê¶¨Î»ÔÚ×îºó
+		driver.pressKeyCode(123);//ï¿½ï¿½ê¶¨Î»ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int i =0;i<size;i++){
-			driver.sendKeyEvent(AndroidKeyCode.BACKSPACE);
+			driver.pressKeyCode(AndroidKeyCode.BACKSPACE);
 		}
 		    
 		driver.findElement(by).sendKeys(value);
@@ -96,7 +97,7 @@ public class Action {
 	
 	
 	public void back(){
-		driver.sendKeyEvent(AndroidKeyCode.BACK);
+		driver.pressKeyCode(AndroidKeyCode.BACK);
 	}
 	
 	public void categorySwipe(By source){

@@ -66,7 +66,7 @@ public class TestMeiTuan_1 extends TestSuite{
 	   au.click(By.xpath(homepage.getElement(homepage.category, "美食")));	       
 	   au.swipe(By.xpath(listitemspage.firstitem), By.xpath(listitemspage.discount),false);
 	   au.click(By.xpath(listitemspage.discount));
-	   au.driver.scrollTo("最新通知");
+//	   au.driver.scrollTo("最新通知");
 	}
 	
 	
