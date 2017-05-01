@@ -19,7 +19,7 @@ public class AndroidFirstTest {
   @Test
   public void f() throws MalformedURLException, InterruptedException {
 	  AppiumDriver driver;
-	  File app=new File("D:\\weixin_1041.apk");
+//	  File app=new File("D:\\weixin_1041.apk");
 	  DesiredCapabilities capabilities=new DesiredCapabilities();
 	  //if app already installed then dont need this 
 //	  capabilities.setCapability("app", app.getAbsolutePath());
@@ -61,6 +61,10 @@ public class AndroidFirstTest {
 	  waiting(2000);
 	  driver.findElementById("com.tencent.mm:id/cdi").click();
 	  
+	  driver.findElementById("com.tencent.mm:id/bdr").click();
+	  driver.findElementByXPath("//android.widget.LinearLayout[@resource-id='com.tencent.mm:id/bd2']/android.widget.EditText").sendKeys("12345");
+	  driver.findElementByXPath("//android.widget.LinearLayout[@resource-id='com.tencent.mm:id/bd3']/android.widget.EditText").sendKeys("12345");
+	  driver.findElementById("com.tencent.mm:id/bd4").click();
   }
   
   
